@@ -48,13 +48,13 @@ function clbFun(entries, observer) {
                 });
             }
 
-            if(entry.target.id == "salary") {
+            if(entry.target.classList.contains("anim_type-3")) {
                 anime({
                     targets: entry.target,
-                    innerHTML: [0, 175],
+                    innerHTML: [0, entry.target.innerHTML],
                     round: 1,
                     duration: 1500,
-                    // easing: 'easeInOutExpo'
+                    easing: 'easeInOutExpo'
                 });
             }
             // прекращаем наблюдение
