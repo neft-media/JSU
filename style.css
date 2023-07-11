@@ -38,6 +38,11 @@ body {
     line-height: 1.4;
 }
 
+.page {
+    overflow: hidden;
+    padding-inline: 20px;
+}
+
 header {
     background-image: url("images/image.png");
     background-color: var(--clr-dark-blue);
@@ -66,8 +71,8 @@ header {
     width: 80%;
     text-align: center;
     color: white;
-    font-variant: small-caps;
-    letter-spacing: 0.03em;
+    /* font-variant: small-caps; */
+    /* letter-spacing: 0.03em; */
 }
 
 .main-title_big {
@@ -100,24 +105,60 @@ section {
 .paragraph-title {
     position: sticky;
     top: 15px;
+    width: var(--paragraph-side-width);
 
     font-size: 24px;
     line-height: 1.1;
-    font-weight: 700;
-    animation: fromLeft 0.3s ease-out;
+    font-weight: 700; 
 }
 
-/* @keyframes fromLeft {
+.anim {
+    animation-timing-function: ease-out;
+}
+
+.anim_type-0 {
+    animation-duration: 2s;
+}
+
+.anim_type-1 {
+    animation-duration: 1s;
+}
+
+.anim_type-2 {
+    animation-duration: 1s;
+}
+
+
+@keyframes fromLeft {
     0% {
-      margin-left: -100%;
+      margin-left: -50vw;
     }
     100% {
       margin-left: 0;
     }
-} */
+}
+
+@keyframes fromRight {
+    0% {
+      right: -50vw;
+    }
+    100% {
+      right: 0;
+    }
+}
+
+@keyframes appear {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
 
 .paragraph-title_no-sticky {
     position: static;
+    width: 100%;
 }
 
 .paragraph-callout {
@@ -145,6 +186,10 @@ section {
     font-variant: small-caps;
     text-transform: lowercase;
     letter-spacing: 0.1em;
+}
+
+.ig-card {
+    /* padding: 2rem; */
 }
 
 .ig-icon {
