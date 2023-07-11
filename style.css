@@ -97,10 +97,7 @@ section {
 }
 
 .abbr {
-    font-variant: small-caps;
-    letter-spacing: 0.05em;
-    text-transform: lowercase;
-    font-size: 1.2em; 
+    letter-spacing: 0.05em; 
 }
 
 .paragraph-section {
