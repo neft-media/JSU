@@ -48,6 +48,7 @@ a {
     text-decoration: none;
     color: black;
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    transition: color 0.5s ease-out, background-color 0.5s ease-out;
 }
 
 a:hover {
@@ -383,4 +384,32 @@ section {
     right: calc(-1 * var(--paragraph-side-width) - var(--col-gap));
     top: 0;
     font-style: normal;
+}
+
+
+.univer-promo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+}
+
+.button {
+    display: flex;
+    padding: 0.5em;
+    padding-inline: 2em;
+    font-size: 24px;
+    background-color: var(--clr-orange);
+    color: white !important;
+    border-radius: var(--br-block);
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.button:hover {
+    background-color: var(--clr-light-orange);
+    color: white !important; 
+    border: none;
 }
