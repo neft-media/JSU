@@ -42,6 +42,7 @@ body {
     font-size: 18px;
     font-weight: var(--fw-normal);
     line-height: 1.4;
+    color: black;
 }
 
 a {
