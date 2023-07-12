@@ -2,10 +2,6 @@
 { box-sizing: border-box; }
 
 body {
-  /* color: #e0e4cc;
-  font-size: 1.2em;
-  line-height: 1.6;
-  background: #fa6900; */
   overflow-x: hidden;
 }
 
@@ -57,7 +53,6 @@ label input { display: none;}
 
 label input:checked + .menu {
   box-shadow: 0 0 0 100vw #FFF, 0 0 0 100vh #FFF;
-  /* height: 100vh; */
   border-radius: 0;
   
 }
@@ -97,19 +92,17 @@ label ul {
 }
 
 label a {
-  margin-bottom: 1em;
-  display: block;
-  color: #f38630;
-  text-decoration: none;
-  
+  font-size: 24px;
 }
 
-h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  width: 80%;
-  text-align: center;
+.menu-list {
+    width: 90%;
+    max-width: 800px;
+}
+
+/* Маркер для списка меню */
+.menu-list li {
+    list-style-type: "§";
+    padding-left: 1rem;
+    margin-bottom: 2em;
 }
