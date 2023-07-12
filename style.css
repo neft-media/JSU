@@ -137,18 +137,6 @@ section {
 .anim {
 }
 
-.anim_type-0 {
-    animation-duration: 2s;
-}
-
-.anim_type-1 {
-    transform: translateX(-100px);
-}
-
-.anim_type-2 {
-    animation-duration: 1s;
-}
-
 .paragraph-title_no-sticky {
     position: static;
     width: 100%;

@@ -8,7 +8,7 @@ function clbFun(entries, observer) {
     entries.forEach(entry => {
         // если элемент является наблюдаемым
         if (entry.isIntersecting) {
-            if (entry.target.classList.contains("anim_type-0")) {
+            if (entry.target.classList.contains("anim_type-appearance")) {
                 anime({
                     targets: entry.target,
                     translateY: [
@@ -28,17 +28,7 @@ function clbFun(entries, observer) {
                 });
             }
 
-            if (entry.target.classList.contains("anim_type-1")) {
-                anime({
-                    targets: entry.target,
-                    translateX: [
-                        { value: -100, duration: 0 },
-                        { value: 0, duration: 1000 }
-                    ]
-                });
-            }
-
-            if (entry.target.classList.contains("anim_type-2")) {
+            if (entry.target.classList.contains("anim_type-blur")) {
                 anime({
                     targets: entry.target,
                     duration: 1000,
@@ -48,7 +38,29 @@ function clbFun(entries, observer) {
                 });
             }
 
-            if(entry.target.classList.contains("anim_type-3")) {
+            if (entry.target.classList.contains("anim_type-from-left")) {
+                anime({
+                    targets: entry.target,
+                    translateX: [
+                        { value: -1000, duration: 0},
+                        { value: 0, duration: 1000 }
+                    ],
+                    easing: 'easeOutQuart'
+                });
+            }
+
+            if (entry.target.classList.contains("anim_type-from-right")) {
+                anime({
+                    targets: entry.target,
+                    translateX: [
+                        { value: 1000, duration: 0},
+                        { value: 0, duration: 1000 }
+                    ],
+                    easing: 'easeOutQuart'
+                });
+            }
+
+            if(entry.target.classList.contains("anim_type-counter")) {
                 anime({
                     targets: entry.target,
                     innerHTML: [0, entry.target.innerHTML],
@@ -73,9 +85,15 @@ targets.forEach(target => {
 
 
 // Закрытие меню при нажатии на пункт
-let tocBtbs = document.querySelectorAll(".toc-button");
+const tocBtbs = document.querySelectorAll(".toc-button");
 tocBtbs.forEach(tocBtn => {
     tocBtn.addEventListener("click", () => {
         document.querySelector("#menu-check").checked = false;
     });
+});
+
+const menuBtn = document.querySelector("#menu-check");
+menuBtn.addEventListener("click", () => {
+    const menu = document.querySelector("#menu-list");
+    menu.classList.toggle("menu-list_hidden");
 });
