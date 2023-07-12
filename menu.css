@@ -101,8 +101,8 @@ label a {
 
 .menu-list {
     display: block;
-    width: 90%;
-    max-width: 800px;
+    width: fit-content;
+    max-width: min(90%, 800px);
 }
 
 /* Маркер для списка меню */

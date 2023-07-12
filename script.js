@@ -89,6 +89,7 @@ const tocBtbs = document.querySelectorAll(".toc-button");
 tocBtbs.forEach(tocBtn => {
     tocBtn.addEventListener("click", () => {
         document.querySelector("#menu-check").checked = false;
+        document.querySelector("#menu-list").classList.toggle("menu-list_hidden");
     });
 });
 
