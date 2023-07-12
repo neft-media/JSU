@@ -69,3 +69,13 @@ let targets = document.querySelectorAll('.anim');
 targets.forEach(target => {
     observer.observe(target)
 });
+
+
+
+// Закрытие меню при нажатии на пункт
+let tocBtbs = document.querySelectorAll(".toc-button");
+tocBtbs.forEach(tocBtn => {
+    tocBtn.addEventListener("click", () => {
+        document.querySelector("#menu-check").checked = false;
+    });
+});

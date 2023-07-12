@@ -21,6 +21,11 @@
     --margin-big: 4rem;
 }
 
+html {
+    /* Для плавного скролла к якорю */
+    scroll-behavior: smooth;
+}
+
 * {
     box-sizing: border-box;
 }
