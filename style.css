@@ -64,7 +64,7 @@ a:active, a:visited {
 }
 
 header {
-    background-image: url("images/image.png");
+    background-image: url("images/jsu.svg");
     background-color: var(--clr-dark-blue);
     background-size: cover;
     width: 100%;
