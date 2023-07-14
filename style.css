@@ -132,7 +132,6 @@ section {
     position: sticky;
     top: 15px;
     width: var(--paragraph-side-width);
-    margin-bottom: 0;
     font-size: 24px;
     line-height: 1.1;
     font-weight: 700; 
@@ -428,6 +427,7 @@ section {
 
     .paragraph-title {
         width: 100%;
+        margin-bottom: 0;
     }
 
     .ig-title {
