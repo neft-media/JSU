@@ -186,13 +186,19 @@ section {
 .ig-subtitle {
     margin-top: 0;
     margin-bottom: 0;
-    font-variant: small-caps;
-    text-transform: lowercase;
+    /* font-variant: small-caps; */
+    /* text-transform: lowercase; */
+    text-transform: uppercase;
+    font-size: 16px;
     letter-spacing: 0.1em;
     line-height: 1;
-    font-size: 24px;
     font-weight: normal;
     color: var(--clr-blue);
+}
+
+.ig-inline-unit {
+    font-size: 24px;
+    font-weight: normal;
 }
 
 .ig-text {
