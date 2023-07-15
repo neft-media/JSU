@@ -445,6 +445,10 @@ section {
         font-size: 14px;
     }
 
+    .quotes-author-position {
+        font-size: 14px;
+    }
+
     .quotes-wrapper {
         left: 0;
         width: calc(100% + var(--col-gap) + var(--paragraph-side-width));
@@ -494,11 +498,13 @@ section {
     .paragraph-callout {
         position: static;
         width: 100%;
+        border-top: 1px solid #006fb9;
+        border-bottom: 1px solid #006fb9;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
 
     .paragraph-content {
-        /* max-width: 500px; */
-        /* margin-inline: auto; */
         max-width: 100%;
     }
 
