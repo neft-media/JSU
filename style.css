@@ -18,12 +18,13 @@
     --br-block: 6em 1em 6em 1em;
 
     --margin-small: 1rem;
-    --margin-big: 4rem;
+    --margin-big: 3rem;
 }
 
 html {
     /* Для плавного скролла к якорю */
     scroll-behavior: smooth;
+    font-size: 18px;
 }
 
 * {
@@ -39,7 +40,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Source Sans 3', sans-serif;
-    font-size: 18px;
+    /* font-size: 18px; */
     font-weight: var(--fw-normal);
     line-height: 1.4;
     color: black;
@@ -257,8 +258,8 @@ section {
     column-gap: var(--col-gap);
     grid-template-columns: 1fr var(--paragraph-side-width);
     align-items: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: var(--margin-small);
+    margin-bottom: var(--margin-small);
     padding-top: 2rem;
     padding-bottom: 2rem;
     padding-left: 2rem;
@@ -462,15 +463,89 @@ section {
 }
 
 @media screen and (max-width: 750px) {
-    .page {
-        padding-inline: 40px;
-    }
-    
-    .paragraph-section {
-        grid-template-columns: 1fr;
+    :root {
+        /* --margin-big: 2rem; */
+        --br-block: 4em 1em 4em 1em;
     }
 
+    .page {
+        padding-inline: 20px;
+    }
+    
+    /* .paragraph-section {
+        grid-template-columns: 1fr;
+    } */
+
     .paragraph-title {
+        text-align: center;
+        margin-top: 0;
+    }
+
+    html {
+        font-size: 16px;
+    }
+
+    .paragraph-callout {
+        position: static;
         width: 100%;
+    }
+
+    .paragraph-content {
+        /* max-width: 500px; */
+        /* margin-inline: auto; */
+        max-width: 100%;
+    }
+
+    .paragraph-content p:last-child {
+        margin-bottom: 0;
+    }
+
+    .ig-section {
+        padding: 2rem;
+        padding-inline: 1rem;
+    }
+
+    .ig-wrapper {
+        grid-template-columns: 1fr;
+        row-gap: 1rem;
+    }
+
+    .quotes-wrapper {
+        grid-template-columns: 1fr;
+        width: 100%;
+        padding-inline: 1.5rem;
+    }
+
+    .quotes-author {
+        margin-top: var(--margin-small);
+    }
+
+    .timeline-container {
+        grid-template-columns: 50px 1fr;
+        column-gap: 1rem;
+    }
+
+    .timeline-date {
+        justify-self: unset;
+    }
+
+    .timeline-author {
+        width: 100%;
+    }
+
+    .timeline-author-image {
+        width: 150px;
+    }
+
+    .timeline-text {
+        max-width: 100%;
+    }
+
+    .timeline-dot {
+        --dot-diam: 15px;
+    }
+
+    .timeline-dot_small {
+        --dot-diam: 10px;
     }
 }
