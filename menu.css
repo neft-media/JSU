@@ -101,15 +101,19 @@ label a {
 
 .menu-list {
     display: block;
-    width: fit-content;
-    max-width: min(90%, 800px);
+    width: 100%;
+    /* width: fit-content; */
+    max-width: min(80%, 800px);
+    padding-inline-start: 0;
+    text-align: center;
 }
 
 /* Маркер для списка меню */
 .menu-list li {
-    list-style-type: "§";
+    list-style-type: none;
     padding-left: 1rem;
     margin-bottom: 2em;
+    padding-inline-start: 0;
 }
 
 .menu-list_hidden {

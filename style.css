@@ -522,6 +522,11 @@ section {
         row-gap: 1rem;
     }
 
+    .ig-text {
+        max-width: 390px;
+        margin-inline: auto;
+    }
+
     .quotes-wrapper {
         grid-template-columns: 1fr;
         width: 100%;
@@ -559,5 +564,19 @@ section {
 
     .timeline-dot_small {
         --dot-diam: 10px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .main-title {
+        font-size: 32px;
+    }
+
+    .menu-list {
+        width: 100%;
+    }
+
+    label a {
+        font-size: 18px;
     }
 }

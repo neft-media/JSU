@@ -1,7 +1,7 @@
 let options = {
     root: null,
     rootMargin: "0px",
-    threshold: 0.1,
+    threshold: 0, // насколько объект должен появиться, чтобы попасть в observ
 };
 
 function clbFun(entries, observer) {
