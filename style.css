@@ -73,7 +73,7 @@ header {
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 100vh; 
+    height: 100svh; 
 }
 
 .header-curtain {
@@ -85,7 +85,7 @@ header {
     /* backdrop-filter: grayscale(50%); */
     position: absolute;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     left: 0;
     top: 0;
 }
