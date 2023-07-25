@@ -356,9 +356,9 @@ section {
 
 .timeline-author-image {
     max-width: 200px;
-    -webkit-box-shadow: 0px 0px 0px 3px rgb(234 91 10);
-    -moz-box-shadow: 0px 0px 0px 3px rgb(234 91 10);
-    box-shadow: 0px 0px 0px 3px rgb(234 91 10);
+    -webkit-box-shadow: 0px 0px 0px 3px rgb(0 111 185);
+    -moz-box-shadow: 0px 0px 0px 3px rgb(0 111 185);
+    box-shadow: 0px 0px 0px 3px rgb(0 111 185);
 }
 
 .timeline-dot {
