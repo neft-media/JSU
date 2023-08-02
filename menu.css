@@ -7,11 +7,11 @@ body {
 
 label .menu {
   position: fixed;
-  right: -100px;
-  top: -100px;
+  right: -50px;
+  top: -50px;
   z-index: 100;
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   background: #FFF;
   border-radius: 50% 50% 50% 50%;
   -webkit-transition: .5s ease-in-out;
@@ -22,9 +22,9 @@ label .menu {
 
 label .hamburger {
   position: absolute;
-  top: 135px;
-  left: 50px;
-  width: 30px;
+  top: 65px;
+  left: 20px;
+  width: 20px;
   height: 2px;
   background: #004595;
   display: block;
@@ -45,9 +45,9 @@ label .hamburger:after, label .hamburger:before {
   background: #004595;
 }
 
-label .hamburger:before { top: -10px; }
+label .hamburger:before { top: -5px; }
 
-label .hamburger:after { bottom: -10px; }
+label .hamburger:after { bottom: -5px; }
 
 label input { display: none;}
 
